@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="initialize()">
     <header>
         <h1 class="oscuro" id="titulo-principal">NASA against fire</h1>
         <h2 class="oscuro" id="subtitulo-principal">One Tree against the Wildfire</h2>
@@ -19,8 +19,8 @@
     <div class="descripcion">
         <p id="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ut dolorum molestiae numquam id facilis dolor labore totam quae doloremque fuga, molestias corporis sapiente eum ipsam libero eaque consequatur culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus suscipit possimus nam nisi similique enim exercitationem sapiente officiis nemo odit, temporibus id optio illum, totam deleniti culpa maiores tempora voluptate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aspernatur voluptas cumque molestias, voluptate dolorem esse ea ipsam consequuntur temporibus omnis voluptatibus eligendi fugiat reprehenderit repellat. Est atque odio sequi.</p>
     </div>
-    <div class="globo">
-        <img src="img/globo.png" alt="" id="globo">
+    <div id="globo">
+        <!-- <img src="img/globo.png" alt="" id="globo"> -->
     </div>
     <div class="articulo">
         <h1 id="titulo-articulo">Lorem ipsum</h1>
@@ -100,5 +100,8 @@
         </div>
         
     </div>
+
+    <script src="https://www.webglearth.com/v2/api.js"></script>
+    <script src="globo.js"></script>
 </body>
 </html>

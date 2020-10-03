@@ -71,7 +71,7 @@ p {
     text-align: justify;
 }
 
-.globo {
+#globo {
     width: 100vw;
     height: 100vh;
     background: black;
@@ -115,11 +115,11 @@ p {
     padding-top: 10px;
 }
 
-#globo {
+/* #globo {
     width: 40%;
     margin-left: 30%;
     margin-top: 5%;
-}
+} */
 
 #titulo-articulo {
     margin-top: 40px;
@@ -171,7 +171,7 @@ p {
 @media only screen
     and (min-device-width: 320px)
     and (max-device-width: 1080px) {
-        .globo {
+        #globo {
             height: 500px;
         }
     }
