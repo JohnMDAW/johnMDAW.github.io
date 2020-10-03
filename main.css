@@ -1,6 +1,8 @@
 * {
     margin: 0;
+
 }
+
 
 html {
     background-color: #e7d8b6;
@@ -11,6 +13,11 @@ header {
     max-height: 7800%;
     display: flex;
     justify-content: center;
+}
+
+body{
+    overflow-x: hidden;
+
 }
 
 h1 {
@@ -29,6 +36,14 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     color: #e7d8b6;
+}
+
+h4{
+    position: absolute;
+    font-family: 'Zilla Slab', serif;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e7d8b6; 
 }
 
 p {
@@ -77,6 +92,23 @@ p {
     background: black;
 }
 
+#globo .we-pp-wrapper,.we-pp-tip {
+    background-color: #e7d8b6;
+}
+
+#globo .we-pp-tip{
+    background-color: #e7d8b6;
+}
+
+#globo b {
+    color: #182749;
+    text-decoration: none;
+}
+
+#globo a {
+    color: #182749;
+    text-decoration: none;
+}
 .articulo {
     width: 100vw;
     height: max-content;
@@ -92,7 +124,7 @@ p {
 
 .footer {
     width: 100vw;
-    height: 500px;
+    height: 250px;
     align-items: center;
 }
 
@@ -105,16 +137,47 @@ p {
 
 #titulo-principal {
     margin-top: 50px;
-}
+    text-shadow:
+        -1px -1px 0 #e7d8b6,  
+        1px -1px 0 #e7d8b6,
+        -1px 1px 0 #e7d8b6,
+        1px 1px 0 #e7d8b6;
+    }
 
 #subtitulo-principal {
     margin-top: 130px;
+        text-shadow:
+    -1px -1px 0 #e7d8b6,  
+    1px -1px 0 #e7d8b6,
+    -1px 1px 0 #e7d8b6,
+    1px 1px 0 #e7d8b6;
 }
 
 #descripcion {
     padding-top: 10px;
 }
+#globo-scroll-izda {
+    width: 27vw;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+}
 
+#globo-scroll-drcha {
+    margin-left: 73vw;
+    width: 27vw;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+}
+
+#globo-scroll-abajo {
+    width: 100vw;
+    height: 20vh;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 80vh;
+}
 /* #globo {
     width: 40%;
     margin-left: 30%;
@@ -131,7 +194,26 @@ p {
     padding-bottom: 20px;
     text-align: justify;
 }
+#incendioGalicia{
+    display: none;
+}
 
+#incendioAmazonas{
+    display: none;
+
+}
+
+#incendioCalifornia{
+    display: none;
+}
+
+#incendioAustralia{
+    display: none;
+}
+
+#nasa{
+    display: block;
+}
 #degradado-articulo {
     width: 100vw;
     height: 100px;
@@ -167,11 +249,68 @@ p {
 }
 
 
+@media only screen
+    and (min-device-width: 400px)
+    and (max-device-width: 635px) {
+        .descripcion {
+            height: 6000px;
+        }
+    }
 
+@media only screen
+    and (min-device-width: 636px)
+    and (max-device-width: 1076px) {
+        .descripcion {
+            height: 400px;
+        }
+    }
 @media only screen
     and (min-device-width: 320px)
     and (max-device-width: 1080px) {
         #globo {
             height: 500px;
         }
+    }
+    img.landsat{
+        border-radius: 6px;
+        width: 700px;
+        height: 500px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
+    img.landsat9{
+        border-radius: 6px;
+        width: 600px;
+        height: 600px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    
+    }
+    img.smoke{
+        border-radius: 6px;
+        width: 630px;
+        height: 360px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
+    
+    iframe.video{
+        width: 560px;
+        height:315px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
+    
+    
+    img.before-after{
+        border-radius: 7px;
+        width:780px;
+        height: 500px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
     }
