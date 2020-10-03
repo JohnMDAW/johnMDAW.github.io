@@ -56,7 +56,8 @@ function apareceGalicia() {
 
 function apareceAustralia() {
     document.getElementById('nasa').style.display = 'none';
-
+    document.getElementById('comparison_australia').style.display='block';
+    document.getElementById('comparison_california').style.display='none';
     document.getElementById('incendioAmazonas').style.display = 'none';
     document.getElementById('incendioGalicia').style.display = 'none';
     document.getElementById('incendioAustralia').style.display = 'block';
@@ -77,7 +78,8 @@ function apareceAmazonas() {
 }
 
 function apareceNasa() {
-    document.getElementById('container').style.display='none';
+    document.getElementById('comparison_australia').style.display='none';
+    document.getElementById('comparison_california').style.display='none';
     document.getElementById('nasa').style.display = 'block';
     document.getElementById('incendioAmazonas').style.display = 'none';
     document.getElementById('incendioGalicia').style.display = 'none';
