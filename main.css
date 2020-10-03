@@ -420,8 +420,7 @@ p {
   }
   
   /*Imagen antes y despues California*/
-  figure.after-california { 
-      display:none;
+  figure.after-california {
     position: absolute;
       background-image: url(img/images-fires/despues-california.jpg);
       background-size: cover;
@@ -431,8 +430,7 @@ p {
       margin: 0; 
   }
   
-  #divisor_before-california { 
-      display:none;
+  #divisor_before-california {
       background-image: url(img/images-fires/antes-california.jpg);
       background-size: cover;
       position: absolute;
