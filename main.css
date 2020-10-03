@@ -336,7 +336,19 @@ p {
     max-width: 100%;
   }
   
-#comparison {
+#comparison_australia {
+    display:none;
+    margin: auto;
+    border-radius: 6px;
+    max-width: 90%;  
+    width: 800px;
+    height: 500px;
+    padding-bottom: 5%;
+    overflow: hidden; 
+    position: relative;
+  }
+
+#comparison_california {
     display:none;
     margin: auto;
     border-radius: 6px;
