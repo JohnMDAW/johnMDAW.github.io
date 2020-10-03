@@ -128,11 +128,58 @@ p {
     align-items: center;
 }
 
+
+
 .desarrolladores {
     display: block;
     padding-top: 50px;
     padding-left: 10%;
 }
+
+
+    img.landsat{
+        border-radius: 6px;
+        width: 700px;
+        height: 500px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
+    img.landsat9{
+        border-radius: 6px;
+        width: 600px;
+        height: 600px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    
+    }
+    img.smoke{
+        border-radius: 6px;
+        width: 630px;
+        height: 360px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
+    
+    iframe.video{
+        width: 560px;
+        height:315px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
+    
+    
+    img.before-after{
+        border-radius: 7px;
+        width:780px;
+        height: 500px;
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
 
 
 #titulo-principal {
@@ -249,6 +296,8 @@ p {
 }
 
 
+
+
 @media only screen
     and (min-device-width: 400px)
     and (max-device-width: 635px) {
@@ -270,47 +319,4 @@ p {
         #globo {
             height: 500px;
         }
-    }
-    img.landsat{
-        border-radius: 6px;
-        width: 700px;
-        height: 500px;
-        display:block;
-        margin:auto;
-        max-width: 100%;
-    }
-    img.landsat9{
-        border-radius: 6px;
-        width: 600px;
-        height: 600px;
-        display:block;
-        margin:auto;
-        max-width: 100%;
-    
-    }
-    img.smoke{
-        border-radius: 6px;
-        width: 630px;
-        height: 360px;
-        display:block;
-        margin:auto;
-        max-width: 100%;
-    }
-    
-    iframe.video{
-        width: 560px;
-        height:315px;
-        display:block;
-        margin:auto;
-        max-width: 100%;
-    }
-    
-    
-    img.before-after{
-        border-radius: 7px;
-        width:780px;
-        height: 500px;
-        display:block;
-        margin:auto;
-        max-width: 100%;
     }
