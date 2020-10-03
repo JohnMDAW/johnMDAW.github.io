@@ -343,7 +343,6 @@ p {
   display: none;
   width: 750px;
     height: 500px;
-  padding-bottom: 100%;
   overflow: hidden;
   position: relative;
 }
