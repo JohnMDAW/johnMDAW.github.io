@@ -2,7 +2,13 @@
     margin: 0;
 
 }
-
+/*Fonts */
+@font-face{
+    font-family: 'XBambi';
+    src: url('fonts/XBambi.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
     background-color: #e7d8b6;
@@ -183,6 +189,7 @@ p {
 
 
 #titulo-principal {
+    font-family: XBambi;
     margin-top: 50px;
     text-shadow:
         -1px -1px 0 #e7d8b6,  
@@ -192,6 +199,7 @@ p {
     }
 
 #subtitulo-principal {
+    font-family: XBambi;
     margin-top: 130px;
         text-shadow:
     -1px -1px 0 #e7d8b6,  
