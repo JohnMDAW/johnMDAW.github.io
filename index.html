@@ -183,8 +183,16 @@
 
             Por último, es importante destacar que la duración de los incendios va desde junio de 2019 hasta mayo de
             2020.<br><br>
-            <img src="img/images-fires/antes-despues-australia.jpg" class="before-after"
-                alt="Imagen del antes y despues de los incendios de Australia" />
+            <div class="container">
+            <div id="comparison">
+              <figure class="after-australia">
+                <div id="handle"></div>
+                <div id="divisor_before-australia"></div>
+              </figure>
+              <input type="range" min="0" max="100" value="50" id="slider-australia" oninput="moveDivisorAustralia()">
+            </div>
+           </div>
+            
         </p>
         <p id="incendioCalifornia" class="oscuro">
             La temporada de incendios forestales salvajes en California empezó a principios de mayo del año 2020. Hasta
@@ -200,8 +208,15 @@
             Hasta la fecha, 26 personas han perdido la vida a causa de estos incendios y más de 4000 estructuras han
             sido dañadas en los incendios [2: https://www.fire.ca.gov/incidents/ ]. Todavía no se han contenido todos
             los incendios, por lo que estos número seguirán aumentando. <br><br>
-            <img src="img/images-fires/antes-despues-california.jfif" class="before-after"
-                alt="Antes y el después de los incendios de California" /><br><br>
+            <div class="container">
+                <div id="comparison">
+                  <figure class="after-california">
+                    <div id="handle"></div>
+                    <div id="divisor_before-california"></div>
+                  </figure>
+                  <input type="range" min="0" max="100" value="50" id="slider-california" oninput="moveDivisorCalifornia()">
+                </div>
+             </div>
         </p>
     </div>
 
@@ -229,6 +244,7 @@
 
     <script src="https://www.webglearth.com/v2/api.js"></script>
     <script src="globo.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
