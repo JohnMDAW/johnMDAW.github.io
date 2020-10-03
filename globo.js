@@ -77,7 +77,7 @@ function apareceAmazonas() {
 }
 
 function apareceNasa() {
-    document.getElementById('comparison').style.display='none';
+    document.getElementById('container').style.display='none';
     document.getElementById('nasa').style.display = 'block';
     document.getElementById('incendioAmazonas').style.display = 'none';
     document.getElementById('incendioGalicia').style.display = 'none';
