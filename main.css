@@ -348,7 +348,7 @@ p {
 
 figure.after-australia {
   position: absolute;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-before.jpg);
+  background-image: url(img/images-fires/despues-australia.jpg);
   background-size: cover;
   font-size: 0;
   width: 100%;
@@ -357,7 +357,7 @@ figure.after-australia {
 }
 
 #divisor_before-australia {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-after.jpg);
+  background-image: url(img/images-fires/antes-australia.jpg);
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -394,7 +394,7 @@ figure.after-australia {
 
 figure.after-california {
   position: absolute;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-before.jpg);
+  background-image: url(img/images-fires/despues-california.jpg);
   background-size: cover;
   font-size: 0;
   width: 100%;
@@ -403,7 +403,7 @@ figure.after-california {
 }
 
 #divisor_before-california {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-after.jpg);
+  background-image: url(img/images-fires/antes-california.jpg);
   background-size: cover;
   position: absolute;
   width: 50%;
