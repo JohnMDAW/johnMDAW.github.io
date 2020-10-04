@@ -1,3 +1,5 @@
+var elmnt = document.getElementById('titulo-articulo');
+
 function initialize() {
     var options = {
         zooming: false,
@@ -28,63 +30,100 @@ function initialize() {
     marker3.bindPopup("<a href=\"javascript:apareceAustralia()\"><b>Incendio de Australia</span></a>", { maxWidth: 150, closeButton: false }).openPopup();
     var marker4 = WE.marker([37.0, -121], 'img/fuego.png', 50, 50).addTo(earth);
     marker4.bindPopup("<a href=\"javascript:apareceCalifornia()\"><b>Incendio de California</span></a>", { maxWidth: 150, closeButton: false }).openPopup();
-    var marker5 = WE.marker([38.89, -77.09]).addTo(earth);
+    var marker5 = WE.marker([38.89, -77.09],'img/rect1147.png',50,50).addTo(earth);
     marker5.bindPopup("<a href=\"javascript:apareceNasa()\"><b>NASA</span></a>", { maxWidth: 150, closeButton: false }).openPopup();
 }
 
 
+
 function apareceCalifornia() {
     document.getElementById('nasa').style.display = 'none';
+
     document.getElementById('comparison_california').style.display = 'block';
     document.getElementById('comparison_australia').style.display = 'none';
+    document.getElementById('comparison_amazonas').style.display = 'none';
+    document.getElementById('comparison_galicia').style.display = 'none';
+    
     document.getElementById('incendioAmazonas').style.display = 'none';
     document.getElementById('incendioGalicia').style.display = 'none';
     document.getElementById('incendioAustralia').style.display = 'none';
     document.getElementById('incendioCalifornia').style.display = 'block';
     document.getElementById('titulo-articulo').textContent="Incendio en California"
+
+    elmnt.scrollIntoView(true);
+
 }
 
 function apareceGalicia() {
     document.getElementById('nasa').style.display = 'none';
 
+    document.getElementById('comparison_australia').style.display='none';
+    document.getElementById('comparison_california').style.display='none';
+    document.getElementById('comparison_amazonas').style.display = 'none';
+    document.getElementById('comparison_galicia').style.display = 'block';
+    
     document.getElementById('incendioAmazonas').style.display = 'none';
     document.getElementById('incendioGalicia').style.display = 'block';
     document.getElementById('incendioAustralia').style.display = 'none';
     document.getElementById('incendioCalifornia').style.display = 'none';
     document.getElementById('titulo-articulo').textContent="Incendio en Galicia"
 
+    elmnt.scrollIntoView(true);
+
+
 }
 
 function apareceAustralia() {
     document.getElementById('nasa').style.display = 'none';
-    document.getElementById('comparison_australia').style.display='block';
+
+document.getElementById('comparison_australia').style.display='block';
     document.getElementById('comparison_california').style.display='none';
+    document.getElementById('comparison_amazonas').style.display = 'none';
+    document.getElementById('comparison_galicia').style.display = 'none';
+    
     document.getElementById('incendioAmazonas').style.display = 'none';
     document.getElementById('incendioGalicia').style.display = 'none';
     document.getElementById('incendioAustralia').style.display = 'block';
     document.getElementById('incendioCalifornia').style.display = 'none';
     document.getElementById('titulo-articulo').textContent="Incendio en Australia"
 
+    elmnt.scrollIntoView(true);
+
+
 }
 
 function apareceAmazonas() {
     document.getElementById('nasa').style.display = 'none';
 
+    document.getElementById('comparison_australia').style.display = 'none';
+    document.getElementById('comparison_california').style.display = 'none';
+    document.getElementById('comparison_amazonas').style.display = 'block';
+    document.getElementById('comparison_galicia').style.display = 'none';
+    
     document.getElementById('incendioAmazonas').style.display = 'block';
     document.getElementById('incendioGalicia').style.display = 'none';
     document.getElementById('incendioAustralia').style.display = 'none';
     document.getElementById('incendioCalifornia').style.display = 'none';
     document.getElementById('titulo-articulo').textContent="Incendio en Amazonas"
 
+    elmnt.scrollIntoView(true);
+
 }
 
 function apareceNasa() {
-    document.getElementById('comparison_australia').style.display='none';
-    document.getElementById('comparison_california').style.display='none';
     document.getElementById('nasa').style.display = 'block';
+    
+    document.getElementById('comparison_australia').style.display = 'none';
+    document.getElementById('comparison_california').style.display = 'none';
+    document.getElementById('comparison_amazonas').style.display = 'none';
+    document.getElementById('comparison_galicia').style.display = 'none';
+
     document.getElementById('incendioAmazonas').style.display = 'none';
     document.getElementById('incendioGalicia').style.display = 'none';
     document.getElementById('incendioAustralia').style.display = 'none';
     document.getElementById('incendioCalifornia').style.display = 'none';
     document.getElementById('titulo-articulo').textContent="¿Qué rol juega Landsat?"
+
+    elmnt.scrollIntoView(true);
+
 }

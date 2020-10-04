@@ -14,7 +14,7 @@
 
 <body onload="initialize()">
     <header>
-        <h1 class="oscuro" id="titulo-principal">NASA against fire</h1>
+        <h1 class="oscuro" id="titulo-principal"><strong>NASA</strong> against fire</h1>
         <h2 class="oscuro" id="subtitulo-principal">One Tree against the Wildfire</h2>
         <div class="imagen-cabecera">
             <div class="borde-cabecera"></div>
@@ -110,10 +110,17 @@
             del carbono y la mitigación del calentamiento global, con lo cual estos incendios que lo destrozan son un
             gran problema para
             la humanidad pues puede causar graves problemas de salud.<br><br>
-            Duraron aproximadamente desde el 1 de enero de 2019 hasta el 1 de septiembre de ese mismo año.<br><br>
+            Duraron aproximadamente desde el 1 de enero de 2019 hasta el 1 de septiembre de ese mismo año.<br><br> 
+            <div id="container">
+                <div id="comparison_amazonas">
+                    <figure class="after-amazonas">
+                        <div id="handle_amazonas"></div>
+                        <div id="divisor_before-amazonas"></div>
+                    </figure>
+                    <input type="range" min="0" max="100" value="50" id="slider-amazonas" oninput="moveDivisorAmazonas()">
+                </div>
+           </div>
 
-            <img src="img/images-fires/antes-despues-amazonas.jpg" class="before-after"
-                alt="Imagen del antes y despues" /><br><br>
         </p>
 
         <p id="incendioGalicia" class="oscuro">
@@ -140,8 +147,15 @@
             cantidad de humo que provocaron
             los incendios, llegando incluso a la capital británica, Londres, y otras ciudades de Reino Unido, en parte,
             debido al huracán Ophelia. <br><br>
-            <img src="img/images-fires/antes-despues-galicia.jpg" class="before-after"
-                alt="Imagen del antes y despues de los incendios de Galicia" /><br><br>
+            <div id="container">
+                <div id="comparison_galicia">
+                    <figure class="after-galicia">
+                        <div id="handle_galicia"></div>
+                        <div id="divisor_before-galicia"></div>
+                    </figure>
+                    <input type="range" min="0" max="100" value="50" id="slider-galicia" oninput="moveDivisorGalicia()">
+                </div>
+           </div>
         </p>
         <p id="incendioAustralia" class="oscuro">
             La temporada de incendios de 2019 del continente Oceánico, fueron una serie de incendios que afecto a todo
@@ -186,7 +200,7 @@
             <div id="container">
                 <div id="comparison_australia">
                     <figure class="after-australia">
-                        <div id="handle"></div>
+                        <div id="handle_australia"></div>
                         <div id="divisor_before-australia"></div>
                     </figure>
                     <input type="range" min="0" max="100" value="50" id="slider-australia" oninput="moveDivisorAustralia()">
@@ -210,13 +224,13 @@
             los incendios, por lo que estos número seguirán aumentando. <br><br>
             <div id="container">
                 <div id="comparison_california">
-                  <figure class="after-california">
-                    <div id="handle"></div>
-                    <div id="divisor_before-california"></div>
-                  </figure>
-                  <input type="range" min="0" max="100" value="50" id="slider-california" oninput="moveDivisorCalifornia()">
+                    <figure class="after-california">
+                        <div id="handle_california"></div>
+                        <div id="divisor_before-california"></div>
+                    </figure>
+                    <input type="range" min="0" max="100" value="50" id="slider-california" oninput="moveDivisorCalifornia()">
                 </div>
-             </div>
+           </div>
         </p>
     </div>
 
@@ -225,19 +239,14 @@
 
         <div id="borde-footer"></div>
         <div id="degradado-footer">
-            <div class="desarrolladores">
-                <h4>Desarrollado por:</h4>
-                <br><br>
-                <h4>Javier Blanco</h4>
-                <br>
-                <h4>Beatriz Fernández</h4>
-                <br>
-                <h4>Carlos Frechilla</h4>
-                <br>
-                <h4>John Marshall Galán</h4>
-                <br>
-                <h4>Albert Puertas</h4>
-            </div>
+            <h4>Desarrollado por:</h4>
+            <ul class="desarrolladores">
+                <li class="desarrollador">Javier Blanco</li>
+                <li class="desarrollador">Beatriz Fernández</li>
+                <li class="desarrollador">Carlos Frechilla</li>
+                <li class="desarrollador">John Marshall Galán</li>
+                <li class="desarrollador">Albert Puertas</li>
+            </ul>
         </div>
 
     </div>
