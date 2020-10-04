@@ -90,6 +90,12 @@ p {
     display: block;
 }
 
+a {
+    text-decoration: none;
+    color: #001c49;
+    font-weight: 600;
+}
+
 
 .oscuro {
     color: #001c49;
